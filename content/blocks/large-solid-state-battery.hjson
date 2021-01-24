@@ -1,0 +1,17 @@
+type: Battery
+name: "Large Solid State Battery"
+description: "It's the battery equivalent of an SSD (Solid-State Drive), It's also cheaper than 4 regular SSB's (Solid State Batteries)"
+
+consumes: {
+	powerBuffered: 200000
+}
+health: 500
+size: 2
+requirements: [
+  copper/16
+  titanium/32
+  surge-alloy/32
+  silicon/16
+]
+category: power
+reserch: medium-solid-state-battery

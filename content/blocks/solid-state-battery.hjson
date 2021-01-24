@@ -1,0 +1,17 @@
+type: Battery
+name: "Solid State Battery"
+description: "It's the battery equivalent of an SSD (Solid-State Drive)"
+
+consumes: {
+	powerBuffered: 50000
+}
+health: 250
+size: 1
+requirements: [
+  copper/16
+  titanium/16
+  surge-alloy/8
+  silicon/16
+]
+category: power
+reserch: medium-solid-state-battery
