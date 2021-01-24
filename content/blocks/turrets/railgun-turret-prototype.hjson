@@ -1,0 +1,37 @@
+type: PowerTurret
+name: "Railgun Turret Prototype"
+description: "Kind of ugly right? Dude, it's just a prototype!"
+targetAir: true
+targetGround: true
+size: 1
+health: 500
+reloadTime: 100
+shot: 1
+maxAmmo: 20
+range: 300
+shootSound: plasmaboom
+inaccuracy: 2
+rotateSpeed: 5
+coolantMultiplier: 6
+powerUse: 1000
+
+shootType: {
+	type : BasicBulletType
+	damage: 500		
+	speed: 20.0
+	lifetime: 20
+	pierce: true
+	recoilAmount: 8
+}
+	
+requirements: [
+	copper/50
+	lead/5
+	silicon/50
+	titanium/25
+	surge-alloy/20
+	graphite/50
+]
+category: turret
+research: lancer
+smokeEffect: shootSmallSmoke

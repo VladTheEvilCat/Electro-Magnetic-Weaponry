@@ -1,0 +1,40 @@
+type: PowerTurret
+name: "[red]MHEMPWS"
+description: "[red]-classified-"
+targetAir: true
+targetGround: true
+size: 4
+health: 5000
+reloadTime: 1000
+shot: 1
+maxAmmo: 50
+range: 1000
+shootSound: massive-railgun
+inaccuracy: 0
+rotateSpeed: 1
+coolantMultiplier: 40
+powerUse: 10000
+
+smokeEffect: shootBigSmoke
+
+shootType: {
+	type : BasicBulletType
+	damage: 50000
+	splashDamageRadius: 128
+	splashDamage: 15000
+	speed: 40.0
+	lifetime: 50
+	pierce: true
+	recoilAmount: 10
+}
+	
+requirements: [
+	copper/500
+	lead/500
+	silicon/2500
+	titanium/5000
+	surge-alloy/2000
+	graphite/4000
+]
+category: turret
+research: railgun-turret-prototype

@@ -1,8 +1,0 @@
-name: "EMW"
-displayName: "Electro-Magnetic Weaponry"
-author: "Vlad The Evil Cat"
-description: "Powerful weapons that use electromagnetism to make pew."
-version: "1.1"
-minGameVersion: "122.1"
-dependencies: []
-hidden: false
