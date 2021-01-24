@@ -1,6 +1,7 @@
 type: PowerTurret
 name: "[red]MHEMPWS"
-description: "[red]-classified-"
+description: "[red]'Massive Hyper-ElectroMagnetic Propultion Weapon System'"
+details: "[red]-CLASSIFIED-"
 targetAir: true
 targetGround: true
 size: 4
