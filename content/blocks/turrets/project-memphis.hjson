@@ -11,6 +11,8 @@ shot: 1
 maxAmmo: 50
 range: 1000
 shootSound: massive-railgun
+chargeSound: lasercharge
+chargeTime: 1.5
 inaccuracy: 0
 rotateSpeed: 1
 coolantMultiplier: 40
