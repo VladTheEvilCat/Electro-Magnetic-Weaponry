@@ -1,0 +1,46 @@
+type: PowerTurret
+name: "Gauss Cannon"
+description: "Uses coils of wire instead of rails, more complex Fire Control System"
+details: "Don't worry, it's not a prototype!"
+targetAir: true
+targetGround: true
+size: 1
+health: 500
+reloadTime: 100
+shot: 1
+maxAmmo: 20
+range: 300
+shootSound: plasmaboom
+smokeEffect: shootSmallSmoke
+inaccuracy: 2
+rotateSpeed: 15
+coolantMultiplier: 7
+
+
+powerUse: 240
+
+hasPower: true
+powerCapacity: 960
+chargeTime: 1.0
+
+shootType: {
+	type : BasicBulletType
+	damage: 500
+	splashDamageRadius: 8
+	splashDamage: 80
+	speed: 20.0
+	lifetime: 20
+	pierce: true
+	recoilAmount: 8
+}
+
+
+requirements: [
+	copper/50
+	silicon/50
+	titanium/25
+	graphite/10
+	surge-alloy/15
+]
+category: turret
+research: railgun-turret-prototype

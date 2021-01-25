@@ -1,6 +1,7 @@
 type: PowerTurret
 name: "Railgun Turret Prototype"
-description: "Kind of ugly right? Dude, it's just a prototype!"
+description: "Prototype gauss-railgun combination, 'Gail' cannon"
+details: "Kind of ugly right? Dude, it's just a prototype!"
 targetAir: true
 targetGround: true
 size: 1
@@ -18,7 +19,7 @@ powerUse: 1000
 shootType: {
 	type : BasicBulletType
 	damage: 500		
-	speed: 20.0
+	speed: 18.0
 	lifetime: 20
 	pierce: true
 	recoilAmount: 8

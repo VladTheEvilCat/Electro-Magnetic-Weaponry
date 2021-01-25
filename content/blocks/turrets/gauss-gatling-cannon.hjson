@@ -1,6 +1,7 @@
 type: PowerTurret
 name: "Gauss Gatling Cannon"
-description: "Very powerful, uses coils of wire. Oh yah, it's an AA gun as well."
+description: "Very powerful, uses coils of wire."
+details: "Oh yah, it's an AA gun as well."
 targetAir: true
 targetGround: true
 size: 1
@@ -31,6 +32,7 @@ requirements: [
 	plastanium/15
 	metaglass/5
 	graphite/15
+	surge-alloy-5
 ]
 category: turret
 research: railgun-turret-prototype

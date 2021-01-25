@@ -11,7 +11,7 @@ shot: 1
 maxAmmo: 50
 range: 1000
 shootSound: massive-railgun
-inaccuracy: 0
+inaccuracy: 0.5
 rotateSpeed: 1
 coolantMultiplier: 40
 powerUse: 10000
@@ -19,10 +19,10 @@ powerUse: 10000
 smokeEffect: shootBigSmoke
 
 shootType: {
-	type : BasicBulletType
-	damage: 50000
-	splashDamageRadius: 128
-	splashDamage: 15000
+	type: BasicBulletType
+	damage: 25000
+	splashDamageRadius: 96
+	splashDamage: 5000
 	speed: 40.0
 	lifetime: 50
 	pierce: true
@@ -34,6 +34,7 @@ requirements: [
 	lead/500
 	silicon/2500
 	titanium/5000
+	metaglass/100
 	surge-alloy/2000
 	graphite/4000
 ]
