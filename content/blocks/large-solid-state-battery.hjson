@@ -1,6 +1,7 @@
 type: Battery
 name: "Large Solid State Battery"
-description: "It's the battery equivalent of an SSD (Solid-State Drive), It's also cheaper than 4 regular SSB's (Solid State Batteries)"
+description: "It's the battery equivalent of an SSD (Solid-State Drive)"
+details: "It's also cheaper than 4 regular SSB's (Solid State Batteries), and holds 4 times as much as one SSB!"
 
 consumes: {
 	powerBuffered: 200000
