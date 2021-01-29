@@ -1,6 +1,7 @@
 type: PowerTurret
 name: "Gauss Gatling Cannon"
-description: "Very powerful, uses coils of wire. Oh yah, it's an AA gun as well."
+description: "Very powerful, uses coils of wire."
+details: "Oh yah, it's an AA gun as well."
 targetAir: true
 targetGround: true
 size: 1
@@ -8,20 +9,23 @@ health: 500
 reloadTime: 5
 shot: 1
 maxAmmo: 200
-range: 300
-shootSound: shoot
-inaccuracy: 6
+range: 500
+shootSound: pew
+inaccuracy: 2.5
+velocityInaccuracy: 0.075
 rotateSpeed: 10
-coolantMultiplier: 6
+coolantMultiplier: 2.25
+coolantUsage: 0.6
 powerUse: 400
 
 shootType: {
 	type : BasicBulletType
-	damage: 200		
+	damage: 180		
 	speed: 15.0
-	lifetime: 25
-	pierce: true
+	lifetime: 35
+	pierce: false
 	recoilAmount: 3
+	//hitEffect: flakExplosion
 }
 	
 requirements: [

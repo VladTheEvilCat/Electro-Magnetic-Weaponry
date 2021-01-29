@@ -1,6 +1,7 @@
 type: PowerTurret
 name: "Railgun Turret Prototype"
-description: "Kind of ugly right? Dude, it's just a prototype!"
+description: "Uses rails and the Lorenzo force to make pew."
+details: "Kind of ugly right? Dude, it's just a prototype!"
 targetAir: true
 targetGround: true
 size: 1
@@ -8,16 +9,20 @@ health: 500
 reloadTime: 100
 shot: 1
 maxAmmo: 20
-range: 300
+range: 400
 shootSound: plasmaboom
 inaccuracy: 2
+velocityInaccuracy: 0.1
 rotateSpeed: 5
-coolantMultiplier: 6
+coolantMultiplier: 2
+coolantUsage: 0.7
 powerUse: 1000
 
 shootType: {
 	type : BasicBulletType
-	damage: 500		
+	damage: 500
+	splashDamageRadius: 2
+	splashDamage: 120	
 	speed: 20.0
 	lifetime: 20
 	pierce: true

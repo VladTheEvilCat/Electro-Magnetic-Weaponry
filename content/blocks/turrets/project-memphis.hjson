@@ -1,8 +1,8 @@
 type: PowerTurret
 name: "[red]MHEMPWS"
-description: "[red]'Massive Hyper-ElectroMagnetic Propultion Weapon System'"
+description: "[red]'Massive Hyper-Electro-Magnetic Propultion Weapon System'"
 details: "[red]-CLASSIFIED-"
-targetAir: true
+targetAir: false
 targetGround: true
 size: 4
 health: 5000
@@ -11,13 +11,20 @@ shot: 1
 maxAmmo: 50
 range: 1024
 inaccuracy: 0.5
-chargeSound: lasercharge
+
+
+rotateSpeed: 1.125
+coolantMultiplier: 2.125
+coolantUsage: 2.0
+
+//chargeSound: lasercharge
 chargeTime: 1.5
-shootSound: massive-railgun
-rotateSpeed: 1
-coolantMultiplier: 35
+
 shootShake: 5
+shootSound: massive-railgun
+shootEffect: shootBig
 smokeEffect: shootBigSmoke
+
 powerUse: 10000
 
 shootType: {
