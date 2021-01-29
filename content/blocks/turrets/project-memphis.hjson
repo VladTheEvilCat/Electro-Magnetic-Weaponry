@@ -1,4 +1,4 @@
-type: PowerTurret
+type: ItemTurret
 name: "[red]MHEMPWS"
 description: "[red]'Massive Hyper-ElectroMagnetic Propultion Weapon System'"
 details: "[red]-CLASSIFIED-"
@@ -9,15 +9,55 @@ health: 5000
 reloadTime: 1000
 shot: 1
 maxAmmo: 50
-range: 1000
+range: 1024
 shootSound: massive-railgun
 inaccuracy: 0.5
 rotateSpeed: 1
-coolantMultiplier: 40
-powerUse: 10000
+coolantMultiplier: 35
+shootShake: 5
+
+//consumesPower: true
+//powerUse: 10000
 
 smokeEffect: shootBigSmoke
+consumes: {
+	ConsumePower:{
+		usage: 10000
+		capacity: 10000
+		buffered: true
+	}
 
+}
+ammoTypes: {
+	titanium: {
+		damage: 50000
+		splashDamageRadius: 16
+		splashDamage: 10000
+		speed: 40.0
+		lifetime: 50
+		pierce: true
+		recoilAmount: 15
+    	bulletWidth: 3
+    	bulletHeight: 10
+    	hitEffect: flakExplosion
+    	ammoMultiplier: 1
+	}
+	titanium: {
+		damage: 50000
+		splashDamageRadius: 64
+		splashDamage: 20000
+		speed: 40.0
+		lifetime: 50
+		pierce: true
+		recoilAmount: 15
+    	bulletWidth: 3
+    	bulletHeight: 10
+    	hitEffect: flakExplosion
+    	ammoMultiplier: 1
+	}
+}
+
+/*
 shootType: {
 	type: BasicBulletType
 	damage: 25000
@@ -27,7 +67,7 @@ shootType: {
 	lifetime: 50
 	pierce: true
 	recoilAmount: 10
-}
+}*/
 	
 requirements: [
 	copper/500
