@@ -1,6 +1,6 @@
 type: material
 name: HEATFS
-description: "High velocity armor piercing-high explosive ammo for the Rail Gun"
+description: "High velocity armor piercing-high explosive ammo"
 details: "High-Explosive, Anti-Tank, Fin-Stabalized"
 explosiveness: 0.1
 color: ff0a0a
