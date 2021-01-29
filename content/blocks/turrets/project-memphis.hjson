@@ -9,35 +9,77 @@ health: 5000
 reloadTime: 1000
 shot: 1
 maxAmmo: 50
-range: 1000
-shootSound: massive-railgun
+range: 1024
+inaccuracy: 0.5
 chargeSound: lasercharge
 chargeTime: 1.5
-inaccuracy: 0
+shootSound: massive-railgun
 rotateSpeed: 1
-coolantMultiplier: 40
+coolantMultiplier: 35
+shootShake: 5
+smokeEffect: shootBigSmoke
 powerUse: 10000
 
-smokeEffect: shootBigSmoke
-
 shootType: {
-	type : BasicBulletType
-	damage: 50000
-	splashDamageRadius: 128
-	splashDamage: 15000
+	type: BasicBulletType
+	damage: 25000
+	splashDamageRadius: 96
+	splashDamage: 5000
 	speed: 40.0
 	lifetime: 50
+	bulletWidth: 3
+    bulletHeight: 10
 	pierce: true
 	recoilAmount: 10
 }
-	
+
 requirements: [
 	copper/500
 	lead/500
 	silicon/2500
 	titanium/5000
+	metaglass/100
 	surge-alloy/2000
 	graphite/4000
 ]
 category: turret
 research: railgun-turret-prototype
+
+/*
+consumes: {
+	ConsumePower:{
+		usage: 10000
+		capacity: 10000
+		buffered: true
+	}
+
+}
+ammoTypes: {
+	titanium: {
+		damage: 50000
+		splashDamageRadius: 16
+		splashDamage: 10000
+		speed: 40.0
+		lifetime: 50
+		pierce: true
+		recoilAmount: 15
+    	bulletWidth: 3
+    	bulletHeight: 10
+    	hitEffect: flakExplosion
+    	ammoMultiplier: 1
+	}
+	titanium: {
+		damage: 50000
+		splashDamageRadius: 64
+		splashDamage: 20000
+		speed: 40.0
+		lifetime: 50
+		pierce: true
+		recoilAmount: 15
+    	bulletWidth: 3
+    	bulletHeight: 10
+    	hitEffect: flakExplosion
+    	ammoMultiplier: 1
+	}
+}*/
+	
