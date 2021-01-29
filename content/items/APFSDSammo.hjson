@@ -4,7 +4,7 @@ description: "High velocity armor piercing ammo for the Rail Gun"
 details: "Armor-Pearcing, Fin-Stabalized, Discarding-SABOT"
 color: 0f0f0f
 /*
-apfsds20mm : {
+apfsds: {
     speed: 10
     damage: 50
     bulletWidth: 5

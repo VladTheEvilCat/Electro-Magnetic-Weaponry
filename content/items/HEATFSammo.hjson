@@ -5,7 +5,7 @@ details: "High-Explosive, Anti-Tank, Fin-Stabalized"
 explosiveness: 0.1
 color: ff0a0a
 /*
-heatfs20mm : {
+heatfs: {
     speed: 10
     damage: 50
     bulletWidth: 5
