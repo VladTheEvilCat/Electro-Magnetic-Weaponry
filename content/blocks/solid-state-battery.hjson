@@ -1,16 +1,16 @@
 type: Battery
 name: "Solid State Battery"
-description: "It's the battery equivalent of an SSD (Solid-State Drive)"
+description: "Battery equivalent of an SSD (Solid-State Drive)"
 
 consumes: {
-	powerBuffered: 50000
+	powerBuffered: 100000
 }
 health: 250
 size: 1
 requirements: [
   copper/16
   titanium/16
-  surge-alloy/8
+  surge-alloy/64
   silicon/16
 ]
 category: power
