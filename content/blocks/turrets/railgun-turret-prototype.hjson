@@ -30,12 +30,12 @@ shootType: {
 }
 	
 requirements: [
-	copper/50
-	lead/5
-	silicon/50
-	titanium/25
-	surge-alloy/20
-	graphite/50
+	copper/64
+	lead/4
+	silicon/128
+	titanium/64
+	surge-alloy/128
+	graphite/256
 ]
 category: turret
 research: lancer

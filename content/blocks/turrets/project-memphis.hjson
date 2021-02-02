@@ -1,6 +1,6 @@
 type: PowerTurret
 name: "[red]MHEMPWS"
-description: "[red]'Massive Hyper-Electro-Magnetic Propultion Weapon System'"
+description: "[red](MHEMRWS) 'Massive Hyper-Electro-Magnetic Propultion Weapon System'"
 details: "[red]-CLASSIFIED-"
 targetAir: false
 targetGround: true
@@ -41,13 +41,13 @@ shootType: {
 }
 
 requirements: [
-	copper/500
-	lead/500
-	silicon/2500
-	titanium/5000
-	metaglass/100
-	surge-alloy/2000
-	graphite/4000
+	copper/512
+	lead/512
+	silicon/2048
+	titanium/4096
+	metaglass/1024
+	surge-alloy/2048
+	graphite/4096
 ]
 category: turret
 research: railgun-turret-prototype

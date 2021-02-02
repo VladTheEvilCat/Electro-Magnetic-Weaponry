@@ -29,12 +29,12 @@ shootType: {
 }
 	
 requirements: [
-	copper/30
-	silicon/45
-	titanium/30
-	plastanium/15
-	metaglass/5
-	graphite/15
+	copper/32
+	silicon/64
+	titanium/32
+	plastanium/16
+	metaglass/8
+	graphite/32
 ]
 category: turret
 research: railgun-turret-prototype

@@ -1,0 +1,125 @@
+type: ItemTurret
+name: "[red]Project EMERALDS"
+description: "[red](EMDLRAADWS) 'Electro-Magnetic-Driven Long-Range Defense Weapon System'"
+details: "[red]-CLASSIFIED-
+Has a SAT Radar (Search And Tracking)"
+targetAir: true
+targetGround: false
+size: 2
+health: 256
+reloadTime: 10
+shot: 1
+maxAmmo: 1024
+range: 2048
+shootSound: med-gunshot
+inaccuracy: 0.1
+velocityInaccuracy: 0.05
+rotateSpeed: 10
+coolantMultiplier: 1
+coolantUsage: 0.7
+
+consumes: {
+	power: {
+		usage: 170.6666666
+		capacity: 341.3333333
+		//buffered: true
+	}
+
+}
+ammoTypes: {
+	titanium: {
+		damage: 128
+		splashDamageRadius: 4
+		splashDamage: 32
+		speed: 20.0
+		lifetime: 50
+		pierce: true
+		recoilAmount: 10
+    	bulletWidth: 3
+    	bulletHeight: 6
+    	hitEffect: flakExplosion
+    	//hitSound
+    	ammoMultiplier: 5
+    	drag: 0.025
+	}
+	graphite: {
+		damage: 96
+		splashDamageRadius: 8
+		splashDamage: 16
+		speed: 25.0
+		lifetime: 50
+		pierce: true
+		recoilAmount: 8
+    	bulletWidth: 3
+    	bulletHeight: 6
+    	hitEffect: flakExplosion
+    	//hitSound: bang
+    	ammoMultiplier: 10
+    	reloadMultiplier: 1.25
+    	drag: 0.02
+	}
+	blast-compound: {
+		damage: 64
+		splashDamageRadius: 16
+		splashDamage: 64
+		speed: 22.5
+		lifetime: 50
+		pierce: true
+		recoilAmount: 8
+    	bulletWidth: 4
+    	bulletHeight: 6
+    	hitEffect: flakExplosion
+    	hitSize: 8
+		hitSound: bang
+		drag: 0.025
+    	ammoMultiplier: 2
+    	fragBullets: 4
+    	fragVelocityMin: 4
+    	fragVelocityMax: 8
+    	fragBullet: {
+    		type: BasicBulletType
+    		damage: 16
+    		splashDamageRadius: 4
+    		splashDamage: 8
+    		lifetime: 5
+    		//speed: 10
+    	}
+
+	}
+	silicon: {
+		damage: 128
+		splashDamageRadius: 32
+		splashDamage: 128
+		speed: 20.0
+		lifetime: 32
+		recoilAmount: 8
+    	bulletWidth: 3
+    	bulletHeight: 6
+    	hitEffect: flakExplosion
+    	hitSize: 8
+    	hitSound: bang
+    	//ammoMultiplier: 1
+    	drag: 0.026
+    	fragBullets: 16
+    	fragVelocityMin: 4
+    	fragVelocityMax: 8
+    	fragBullet: {
+    		type: BasicBulletType
+    		damage: 32
+    		splashDamageRadius: 8
+    		splashDamage: 32
+    		lifetime: 3
+    		keepVelocity: true
+    	}
+	}
+}
+requirements: [
+	copper/32
+	silicon/512
+	titanium/128
+	plastanium/32
+	metaglass/8
+	graphite/64
+]
+category: turret
+research: gauss-gatling-cannon
