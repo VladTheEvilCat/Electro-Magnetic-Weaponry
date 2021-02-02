@@ -81,7 +81,7 @@ ammoTypes: {
     		damage: 16
     		splashDamageRadius: 4
     		splashDamage: 8
-    		lifetime: 5
+    		lifetime: 4
     		//speed: 10
     	}
 
@@ -90,8 +90,8 @@ ammoTypes: {
 		damage: 128
 		splashDamageRadius: 32
 		splashDamage: 128
-		speed: 20.0
-		lifetime: 32
+		speed: 22.0
+		lifetime: 50
 		recoilAmount: 8
     	bulletWidth: 3
     	bulletHeight: 6
