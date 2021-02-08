@@ -7,20 +7,20 @@ targetAir: true
 targetGround: false
 size: 2
 health: 256
-reloadTime: 10
+reloadTime: 12
 shot: 1
 maxAmmo: 1024
 range: 2048
 shootSound: med-gunshot
-inaccuracy: 0.1
-velocityInaccuracy: 0.05
+inaccuracy: 0.5
+velocityInaccuracy: 0.02
 rotateSpeed: 10
 coolantMultiplier: 1
 coolantUsage: 0.7
 
 consumes: {
 	power: {
-		usage: 170.6666666
+		usage: 17.06666666
 		capacity: 341.3333333
 		//buffered: true
 	}
@@ -48,7 +48,7 @@ ammoTypes: {
 		splashDamageRadius: 2
 		splashDamage: 16
 		speed: 30.0
-		lifetime: 50
+		lifetime: 60
 		pierce: true
 		recoilAmount: 8
     	bulletWidth: 3
