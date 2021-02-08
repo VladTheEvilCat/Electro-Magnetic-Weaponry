@@ -31,7 +31,7 @@ ammoTypes: {
 		damage: 128
 		splashDamageRadius: 4
 		splashDamage: 32
-		speed: 20.0
+		speed: 25
 		lifetime: 50
 		pierce: true
 		recoilAmount: 10
@@ -40,11 +40,12 @@ ammoTypes: {
     	hitEffect: flakExplosion
     	//hitSound
     	ammoMultiplier: 5
+    	reloadMultiplier: 0.8
     	drag: 0.035
 	}
 	graphite: {
 		damage: 96
-		splashDamageRadius: 4
+		splashDamageRadius: 2
 		splashDamage: 16
 		speed: 30.0
 		lifetime: 50
@@ -59,39 +60,40 @@ ammoTypes: {
     	drag: 0.03
 	}
 	blast-compound: {
-		damage: 64
+		damage: 128
 		splashDamageRadius: 16
-		splashDamage: 64
-		speed: 25
+		splashDamage: 128
+		speed: 27.5
 		lifetime: 50
-		pierce: true
+		//pierce: true
 		recoilAmount: 8
     	bulletWidth: 4
     	bulletHeight: 6
     	hitEffect: flakExplosion
-    	hitSize: 8
+    	hitSize: 4
 		hitSound: bang
-		drag: 0.035
-    	ammoMultiplier: 2
-    	fragBullets: 4
+		drag: 0.032
+    	ammoMultiplier: 5
+    	fragBullets: 32
     	fragVelocityMin: 4
-    	fragVelocityMax: 8
+    	fragVelocityMax: 16
     	fragBullet: {
     		type: BasicBulletType
     		damage: 16
+    		hitSound: shoot
     		splashDamageRadius: 4
-    		splashDamage: 8
+    		splashDamage: 32
     		lifetime: 4
     		//speed: 10
     	}
 
 	}
 	silicon: {
-		damage: 128
-		splashDamageRadius: 32
-		splashDamage: 128
+		damage: 64
+		splashDamageRadius: 16
+		splashDamage: 16
 		speed: 25
-		lifetime: 50
+		lifetime: 55
 		recoilAmount: 8
     	bulletWidth: 3
     	bulletHeight: 6
@@ -99,16 +101,19 @@ ammoTypes: {
     	hitSize: 8
     	hitSound: bang
     	//ammoMultiplier: 1
-    	drag: 0.036
+    	drag: 0.035
     	fragBullets: 16
     	fragVelocityMin: 4
-    	fragVelocityMax: 16
+    	fragVelocityMax: 8
     	fragBullet: {
     		type: BasicBulletType
+    		bulletWidth: 2
+    		bulletHeight: 2
     		damage: 32
+    		hitSound: shoot
     		splashDamageRadius: 8
     		splashDamage: 32
-    		lifetime: 3
+    		lifetime: 8
     		keepVelocity: true
     	}
 	}
