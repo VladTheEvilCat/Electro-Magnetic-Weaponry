@@ -40,7 +40,7 @@ ammoTypes: {
     	bulletHeight: 6
     	hitEffect: flakExplosion
     	//hitSound
-    	ammoMultiplier: 5
+    	//ammoMultiplier: 5
     	reloadMultiplier: 0.8
     	drag: 0.035
 	}
@@ -78,7 +78,7 @@ ammoTypes: {
     	hitSize: 4
 		hitSound: bang
 		drag: 0.032
-    	ammoMultiplier: 5
+    	//ammoMultiplier: 5
     	fragBullets: 32
     	fragVelocityMin: 2
     	fragVelocityMax: 16
@@ -123,7 +123,7 @@ ammoTypes: {
         hitSize: 4
         hitSound: bang
         drag: 0.032
-        ammoMultiplier: 5
+        //ammoMultiplier: 5
         fragBullets: 3
         fragVelocityMin: 2
         fragVelocityMax: 4
