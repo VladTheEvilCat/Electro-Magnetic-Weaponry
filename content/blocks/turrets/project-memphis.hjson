@@ -32,10 +32,13 @@ shootType: {
 	damage: 16000
 	splashDamageRadius: 64
 	splashDamage: 8000
+	hitSound: bang
 	speed: 40.0
 	lifetime: 55
 	bulletWidth: 5
     bulletHeight: 10
+    frontColor: ffffff
+    backColor: ff8888
 	pierce: true
 	recoilAmount: 10
 	fragBullets: 32
@@ -44,7 +47,7 @@ shootType: {
     	fragBullet: {
     		type: BasicBulletType
     		damage: 2000
-    		hitSound: shoot
+    		hitSound: bang
     		splashDamageRadius: 16
     		splashDamage: 160
     		lifetime: 4
