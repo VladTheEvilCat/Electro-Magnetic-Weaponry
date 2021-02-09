@@ -10,7 +10,7 @@ health: 256
 reloadTime: 12
 shot: 1
 maxAmmo: 1024
-range: 2048
+range: 1024
 shootSound: med-gunshot
 inaccuracy: 0.5
 velocityInaccuracy: 0.02
