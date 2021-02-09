@@ -1,8 +1,7 @@
 type: ItemTurret
 name: "[red]Project EMERALDS"
 description: "[red](EMDLRAADWS) 'Electro-Magnetic-Driven Long-Range Defense Weapon System'"
-details: "[red]-CLASSIFIED-
-Has a SAT Radar (Search And Tracking)"
+details: "[red]-CLASSIFIED-%nHas a SAT Radar (Search And Tracking)"
 targetAir: true
 targetGround: false
 size: 2
@@ -104,7 +103,8 @@ ammoTypes: {
                 keepVelocity: true
             }
     	}
-        pyratite: {
+    }
+    pyratite: {
         name: "HEFI"
         description: "High-Explosive Fragmentation-Incindiery"
         damage: 64
