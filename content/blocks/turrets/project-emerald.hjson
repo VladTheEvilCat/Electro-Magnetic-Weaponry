@@ -33,7 +33,7 @@ ammoTypes: {
 		damage: 128
 		splashDamageRadius: 2
 		splashDamage: 64
-		speed: 25
+		speed: 27.5
 		lifetime: 50
 		pierce: true
 		recoilAmount: 10
@@ -48,7 +48,7 @@ ammoTypes: {
 	graphite: {
         name: "HVAP"
         description: "High Velocity Armor Piercing"
-		damage: 96
+		damage: 64
 		splashDamageRadius: 2
 		splashDamage: 16
 		speed: 32.0
@@ -104,6 +104,41 @@ ammoTypes: {
                 keepVelocity: true
             }
     	}
+        pyratite: {
+        name: "HEFI"
+        description: "High-Explosive Fragmentation-Incindiery"
+        damage: 64
+        splashDamageRadius: 8
+        splashDamage: 32
+        incendAmount: 5
+        incendSpread: 10
+        incentChance: 1.1
+        speed: 27.5
+        lifetime: 50
+        //pierce: true
+        recoilAmount: 8
+        bulletWidth: 4
+        bulletHeight: 6
+        hitEffect: flakExplosion
+        hitSize: 4
+        hitSound: bang
+        drag: 0.032
+        ammoMultiplier: 5
+        fragBullets: 3
+        fragVelocityMin: 2
+        fragVelocityMax: 4
+        fragBullet: {
+            type: BasicBulletType
+            damage: 16
+            //hitSound: shoot
+            splashDamageRadius: 4
+            splashDamage: 32
+            incendAmount: 2.5
+            incendSpread: 10
+            incentChance: 1.1
+            lifetime: 3
+            //speed: 10
+        }
 	}
 	silicon: {
         name: "HEF-VT"
@@ -117,7 +152,7 @@ ammoTypes: {
     	bulletWidth: 3
     	bulletHeight: 6
     	hitEffect: flakExplosion
-    	hitSize: 10
+    	hitSize: 16
     	hitSound: bang
     	//ammoMultiplier: 1
     	drag: 0.035
