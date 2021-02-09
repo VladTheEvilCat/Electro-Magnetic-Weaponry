@@ -48,9 +48,8 @@ ammoTypes: {
 		splashDamageRadius: 2
 		splashDamage: 16
 		speed: 30.0
-		lifetime: 60
-		pierce: true
-		recoilAmount: 8
+		lifetime: 64
+		recoilAmount: 4
     	bulletWidth: 3
     	bulletHeight: 6
     	hitEffect: flakExplosion
