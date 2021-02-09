@@ -110,7 +110,7 @@ ammoTypes: {
         damage: 64
         splashDamageRadius: 8
         splashDamage: 32
-        incendAmount: 2
+        incendAmount: 5
         incendSpread: 10
         incentChance: 1
         speed: 27.5
@@ -157,7 +157,7 @@ ammoTypes: {
     	//ammoMultiplier: 1
     	drag: 0.035
     	fragBullets: 16
-    	fragVelocityMin: 4
+    	fragVelocityMin: 2
     	fragVelocityMax: 8
     	fragBullet: {
     		type: BasicBulletType
@@ -168,10 +168,6 @@ ammoTypes: {
     		splashDamageRadius: 8
     		splashDamage: 32
     		lifetime: 6
-    		keepVelocity: true
-            fragBullets: 4
-            fragVelocityMin: 2
-            fragVelocityMax: 4
     	}
 	}
 }
