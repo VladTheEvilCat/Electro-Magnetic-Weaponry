@@ -40,7 +40,7 @@ ammoTypes: {
     	bulletHeight: 6
     	hitEffect: flakExplosion
     	//hitSound
-    	//ammoMultiplier: 5
+    	ammoMultiplier: 1
     	reloadMultiplier: 0.8
     	drag: 0.035
 	}
@@ -78,7 +78,7 @@ ammoTypes: {
     	hitSize: 4
 		hitSound: bang
 		drag: 0.032
-    	//ammoMultiplier: 5
+    	ammoMultiplier: 1
     	fragBullets: 32
     	fragVelocityMin: 2
     	fragVelocityMax: 16
@@ -110,9 +110,9 @@ ammoTypes: {
         damage: 64
         splashDamageRadius: 8
         splashDamage: 32
-        incendAmount: 5
+        incendAmount: 2
         incendSpread: 10
-        incentChance: 1.1
+        incentChance: 1
         speed: 27.5
         lifetime: 50
         //pierce: true
