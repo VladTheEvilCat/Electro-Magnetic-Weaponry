@@ -1,7 +1,7 @@
 type: ArtilleryTurret
 name: "[red]MHEMPWS"
 description: "[red](MHEMRWS) 'Massive Hyper-Electro-Magnetic Propultion Weapon System'"
-details: "[red]-CLASSIFIED-""
+details: "[red]-CLASSIFIED-"
 targetAir: false
 targetGround: true
 size: 4
@@ -50,7 +50,6 @@ ammoTypes: {
     		splashDamageRadius: 16
     		splashDamage: 160
     		lifetime: 4
-    		//speed: 10
     	}
 	}
 	graphite: {
@@ -62,7 +61,6 @@ ammoTypes: {
 		pierce: true
 		recoilAmount: 12
     	bulletWidth: 3
-    	//bulletHeight: 10
     	hitEffect: flakExplosion
     	ammoMultiplier: 2
     	fragBullets: 8
@@ -75,7 +73,6 @@ ammoTypes: {
     		splashDamageRadius: 16
     		splashDamage: 160
     		lifetime: 4
-    		//speed: 10
     	}
 	}
 	blast-compound: {
@@ -100,7 +97,6 @@ ammoTypes: {
     		splashDamageRadius: 16
     		splashDamage: 160
     		lifetime: 8
-    		//speed: 10
     	}
 	}
 }
