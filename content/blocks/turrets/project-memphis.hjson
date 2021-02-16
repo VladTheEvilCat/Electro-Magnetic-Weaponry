@@ -8,12 +8,12 @@ reloadTime: 1000
 shot: 1
 maxAmmo: 50
 range: 2048
-//minRange: 32
+minRange: 32
 inaccuracy: 0.125
 
-rotateSpeed: 1.0
+rotateSpeed: 0.5
 coolantMultiplier: 2.125
-coolantUsage: 2.0
+coolantUsage: 4.0
 
 shootShake: 5
 shootSound: massive-railgun
@@ -65,7 +65,7 @@ ammoTypes: {
     ammoMultiplier: 2
     fragBullets: 8
     fragVelocityMin: 2
-    fragVelocityMax: 8
+    fragVelocityMax: 4
     fragBullet: {
     	type: BasicBulletType
     	damage: 500
@@ -80,8 +80,8 @@ ammoTypes: {
 		damage: 8000
 		splashDamageRadius: 64
 		splashDamage: 6000
-		speed: 40.0
-		lifetime: 50
+		speed: 35.0
+		//lifetime: 50
 		pierce: true
 		hitTiles: false
     bulletWidth: 3
@@ -93,6 +93,7 @@ ammoTypes: {
     fragBullet: {
     	type: BasicBulletType
     	damage: 800
+    	pierce: true
     	hitSound: bang
     	hitTiles: true
     	splashDamageRadius: 16
@@ -115,7 +116,7 @@ ammoTypes: {
 }
 
 requirements: [
-	copper/512
+	copper/1024
 	lead/512
 	silicon/2048
 	titanium/4096
