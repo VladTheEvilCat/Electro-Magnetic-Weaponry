@@ -1,8 +1,7 @@
 type: ArtilleryTurret
 name: "[red]MHEMPWS"
 description: "[red](MHEMRWS) 'Massive Hyper-Electro-Magnetic Propultion Weapon System'"
-details: "[red]-CLASSIFIED-
-[yellow]Uses >0 Power"
+details: "[red]-CLASSIFIED-""
 targetAir: false
 targetGround: true
 size: 4
@@ -13,19 +12,14 @@ maxAmmo: 50
 range: 1024
 inaccuracy: 0.125
 
-
 rotateSpeed: 1.125
 coolantMultiplier: 2.125
 coolantUsage: 2.0
-
-chargeTime: 1.5
 
 shootShake: 5
 shootSound: massive-railgun
 shootEffect: railShoot
 smokeEffect: bigShockwave
-
-//powerUse: 10000
 
 consumes: {
 	power: {
@@ -70,7 +64,7 @@ ammoTypes: {
     	bulletWidth: 3
     	//bulletHeight: 10
     	hitEffect: flakExplosion
-    	ammoMultiplier: 1
+    	ammoMultiplier: 2
     	fragBullets: 8
     	fragVelocityMin: 2
     	fragVelocityMax: 8
@@ -110,36 +104,6 @@ ammoTypes: {
     	}
 	}
 }
-
-/*
-shootType: {
-	type: BasicBulletType
-	damage: 16000
-	splashDamageRadius: 64
-	splashDamage: 8000
-	hitSound: bang
-	speed: 40.0
-	lifetime: 55
-	bulletWidth: 5
-    bulletHeight: 10
-    frontColor: ffffff
-    backColor: ff8888
-	pierce: true
-	recoilAmount: 10
-	fragBullets: 32
-	fragVelocityMin: 2
-	fragVelocityMax: 8
-	fragBullet: {
-		type: BasicBulletType
-		damage: 2000
-		hitSound: bang
-		splashDamageRadius: 16
-		splashDamage: 160
-		lifetime: 4
-		//speed: 10
-	}
-}
-*/
 
 requirements: [
 	copper/512
