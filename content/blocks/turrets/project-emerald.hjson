@@ -1,21 +1,21 @@
 type: ItemTurret
 name: "[red]Project EMERALDS"
 description: "[red](EMDLRAADWS) 'Electro-Magnetic-Driven Long-Range Defense Weapon System'"
-details: "[red]-CLASSIFIED-%nHas a SAT Radar (Search And Tracking)"
+details: "[red]-CLASSIFIED-"
 targetAir: true
 targetGround: false
 size: 2
 health: 256
-reloadTime: 12
+reloadTime: 24
 shot: 1
 maxAmmo: 1024
 range: 1024
 shootSound: med-gunshot
 inaccuracy: 0.5
 velocityInaccuracy: 0.02
-rotateSpeed: 10
+rotateSpeed: 8
 coolantMultiplier: 1
-coolantUsage: 0.7
+coolantUsage: 0.9
 
 consumes: {
 	power: {
@@ -37,7 +37,6 @@ ammoTypes: {
 		pierce: true
 		recoilAmount: 10
     	bulletWidth: 3
-    	bulletHeight: 6
     	hitEffect: flakExplosion
     	//hitSound
     	ammoMultiplier: 1
@@ -55,7 +54,6 @@ ammoTypes: {
         pierce: true
 		recoilAmount: 4
     	bulletWidth: 3
-    	bulletHeight: 6
     	hitEffect: flakExplosion
     	//hitSound: bang
     	ammoMultiplier: 10
@@ -64,7 +62,7 @@ ammoTypes: {
 	}
 	blast-compound: {
         name: "HEF"
-        description: "High Fragmentation"
+        description: "High Explosive Fragmentation"
 		damage: 128
 		splashDamageRadius: 16
 		splashDamage: 96
@@ -73,14 +71,13 @@ ammoTypes: {
 		//pierce: true
 		recoilAmount: 8
     	bulletWidth: 4
-    	bulletHeight: 6
     	hitEffect: flakExplosion
     	hitSize: 4
 		hitSound: bang
 		drag: 0.032
     	ammoMultiplier: 1
-    	fragBullets: 32
-    	fragVelocityMin: 2
+    	fragBullets: 16
+    	fragVelocityMin: 4
     	fragVelocityMax: 16
     	fragBullet: {
     		type: BasicBulletType
@@ -94,7 +91,6 @@ ammoTypes: {
             fragBullet: {
                 type: BasicBulletType
                 bulletWidth: 2
-                bulletHeight: 2
                 damage: 16
                 //hitSound: shoot
                 splashDamageRadius: 4
@@ -118,12 +114,11 @@ ammoTypes: {
         //pierce: true
         recoilAmount: 8
         bulletWidth: 4
-        bulletHeight: 6
         hitEffect: flakExplosion
         hitSize: 4
         hitSound: bang
         drag: 0.032
-        //ammoMultiplier: 5
+        ammoMultiplier: 1
         fragBullets: 3
         fragVelocityMin: 2
         fragVelocityMax: 4
@@ -147,14 +142,13 @@ ammoTypes: {
 		splashDamageRadius: 16
 		splashDamage: 16
 		speed: 25
-		lifetime: 55
+		lifetime: 60
 		recoilAmount: 8
-    	bulletWidth: 3
-    	bulletHeight: 6
+    	bulletWidth: 4
     	hitEffect: flakExplosion
     	hitSize: 16
     	hitSound: bang
-    	//ammoMultiplier: 1
+    	ammoMultiplier: 1
     	drag: 0.035
     	fragBullets: 16
     	fragVelocityMin: 2
