@@ -7,9 +7,9 @@ health: 5000
 reloadTime: 1000
 shot: 1
 maxAmmo: 50
-range: 2048
+range: 3072
 minRange: 32
-inaccuracy: 0.125
+inaccuracy: 1
 
 rotateSpeed: 0.5
 coolantMultiplier: 2.125
@@ -84,9 +84,10 @@ ammoTypes: {
 		//lifetime: 50
 		pierce: true
 		hitTiles: false
-    bulletWidth: 3
+    //bulletWidth: 3
     hitEffect: flakExplosion
     ammoMultiplier: 1
+   	hitTiles: false
     fragBullets: 8
     fragVelocityMin: 2
     fragVelocityMax: 16
@@ -95,7 +96,6 @@ ammoTypes: {
     	damage: 800
     	pierce: true
     	hitSound: bang
-    	hitTiles: true
     	splashDamageRadius: 16
     	splashDamage: 160
     	lifetime:5
