@@ -6,7 +6,7 @@ targetAir: true
 targetGround: false
 size: 2
 health: 256
-reloadTime: 24
+reloadTime: 16
 shot: 1
 maxAmmo: 1024
 range: 1024

@@ -9,10 +9,10 @@ health: 5000
 reloadTime: 1000
 shot: 1
 maxAmmo: 50
-range: 1024
+range: 1128
 inaccuracy: 0.125
 
-rotateSpeed: 1.125
+rotateSpeed: 1.0
 coolantMultiplier: 2.125
 coolantUsage: 2.0
 
@@ -20,13 +20,13 @@ shootShake: 5
 shootSound: massive-railgun
 shootEffect: railShoot
 smokeEffect: bigShockwave
-
+/*
 consumes: {
 	power: {
 		usage: 10000
 		capacity: 10000
 	}
-}
+}*/
 ammoTypes: {
 	titanium: {
 		damage: 8000
@@ -111,6 +111,6 @@ requirements: [
 	graphite/4096
 ]
 category: turret
-research: railgun-turret-prototype
+research: project-emerald
 
 
