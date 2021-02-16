@@ -1,7 +1,8 @@
-type: PowerTurret
+type: ArtilleryTurret
 name: "[red]MHEMPWS"
 description: "[red](MHEMRWS) 'Massive Hyper-Electro-Magnetic Propultion Weapon System'"
 details: "[red]-CLASSIFIED-"
+"[yellow]Uses >0 Power"
 targetAir: false
 targetGround: true
 size: 4
@@ -10,23 +11,110 @@ reloadTime: 1000
 shot: 1
 maxAmmo: 50
 range: 1024
-inaccuracy: 0.25
+inaccuracy: 0.125
 
 
 rotateSpeed: 1.125
 coolantMultiplier: 2.125
 coolantUsage: 2.0
 
-//chargeSound: lasercharge
 chargeTime: 1.5
 
 shootShake: 5
 shootSound: massive-railgun
-shootEffect: shootBig
-smokeEffect: shootBigSmoke
+shootEffect: railShoot
+smokeEffect: bigShockwave
 
-powerUse: 10000
+//powerUse: 10000
 
+consumes: {
+	ConsumePower:{
+		usage: 10000
+		capacity: 10000
+		buffered: true
+	}
+
+}
+ammoTypes: {
+	titanium: {
+		damage: 8000
+		splashDamageRadius: 16
+		splashDamage: 4000
+		speed: 40.0
+		lifetime: 50
+		pierce: true
+		recoilAmount: 15
+    	bulletWidth: 3
+    	bulletHeight: 10
+    	hitEffect: flakExplosion
+    	ammoMultiplier: 1
+    	fragBullets: 16
+    	fragVelocityMin: 2
+    	fragVelocityMax: 8
+    	fragBullet: {
+    		type: BasicBulletType
+    		damage: 2000
+    		hitSound: bang
+    		splashDamageRadius: 16
+    		splashDamage: 160
+    		lifetime: 4
+    		//speed: 10
+    	}
+	}
+	graphite: {
+		damage: 8000
+		splashDamageRadius: 8
+		splashDamage: 4000
+		speed: 45.0
+		lifetime: 50
+		pierce: true
+		recoilAmount: 12
+    	bulletWidth: 3
+    	//bulletHeight: 10
+    	hitEffect: flakExplosion
+    	ammoMultiplier: 1
+    	fragBullets: 8
+    	fragVelocityMin: 2
+    	fragVelocityMax: 8
+    	fragBullet: {
+    		type: BasicBulletType
+    		damage: 1000
+    		hitSound: bang
+    		splashDamageRadius: 16
+    		splashDamage: 160
+    		lifetime: 4
+    		//speed: 10
+    	}
+	}
+	blast-compound: {
+		damage: 8000
+		splashDamageRadius: 64
+		splashDamage: 8000
+		speed: 40.0
+		lifetime: 50
+		pierce: true
+		recoilAmount: 15
+    	bulletWidth: 3
+    	bulletHeight: 10
+    	hitEffect: flakExplosion
+    	ammoMultiplier: 1
+    	fragBullets: 32
+    	fragVelocityMin: 2
+    	fragVelocityMax: 16
+    	fragBullet: {
+    		type: BasicBulletType
+    		damage: 2000
+    		hitSound: bang
+    		splashDamageRadius: 16
+    		splashDamage: 160
+    		lifetime: 8
+    		//speed: 10
+    	}
+	}
+	}
+}
+
+/*
 shootType: {
 	type: BasicBulletType
 	damage: 16000
@@ -42,18 +130,19 @@ shootType: {
 	pierce: true
 	recoilAmount: 10
 	fragBullets: 32
-    	fragVelocityMin: 2
-    	fragVelocityMax: 8
-    	fragBullet: {
-    		type: BasicBulletType
-    		damage: 2000
-    		hitSound: bang
-    		splashDamageRadius: 16
-    		splashDamage: 160
-    		lifetime: 4
-    		//speed: 10
-    	}
+	fragVelocityMin: 2
+	fragVelocityMax: 8
+	fragBullet: {
+		type: BasicBulletType
+		damage: 2000
+		hitSound: bang
+		splashDamageRadius: 16
+		splashDamage: 160
+		lifetime: 4
+		//speed: 10
+	}
 }
+*/
 
 requirements: [
 	copper/512
@@ -67,41 +156,4 @@ requirements: [
 category: turret
 research: railgun-turret-prototype
 
-/*
-consumes: {
-	ConsumePower:{
-		usage: 10000
-		capacity: 10000
-		buffered: true
-	}
 
-}
-ammoTypes: {
-	titanium: {
-		damage: 50000
-		splashDamageRadius: 16
-		splashDamage: 10000
-		speed: 40.0
-		lifetime: 50
-		pierce: true
-		recoilAmount: 15
-    	bulletWidth: 3
-    	bulletHeight: 10
-    	hitEffect: flakExplosion
-    	ammoMultiplier: 1
-	}
-	titanium: {
-		damage: 50000
-		splashDamageRadius: 64
-		splashDamage: 20000
-		speed: 40.0
-		lifetime: 50
-		pierce: true
-		recoilAmount: 15
-    	bulletWidth: 3
-    	bulletHeight: 10
-    	hitEffect: flakExplosion
-    	ammoMultiplier: 1
-	}
-}*/
-	
