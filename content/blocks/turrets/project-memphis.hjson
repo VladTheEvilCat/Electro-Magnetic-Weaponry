@@ -1,4 +1,4 @@
-type: ArtilleryTurret
+type: ItemTurret
 name: "[red]MHEMPWS"
 description: "[red](MHEMRWS) 'Massive Hyper-Electro-Magnetic Propultion Weapon System'"
 details: "[red]-CLASSIFIED-"
@@ -8,7 +8,7 @@ reloadTime: 1000
 shot: 1
 maxAmmo: 50
 range: 1128
-minRange: 32
+//minRange: 32
 inaccuracy: 0.125
 
 rotateSpeed: 1.0
@@ -28,6 +28,7 @@ consumes: {
 }
 ammoTypes: {
 	titanium: {
+		type: ArtilleryBulletType
 		damage: 8000
 		splashDamageRadius: 16
 		splashDamage: 4000
@@ -43,6 +44,7 @@ ammoTypes: {
     fragVelocityMax: 8
     fragBullet: {
     	type: BasicBulletType
+    	hitTiles: false
     	damage: 2000
     	hitSound: bang
     	splashDamageRadius: 16
@@ -51,6 +53,7 @@ ammoTypes: {
    	}
 	}
 	graphite: {
+		type: ArtilleryBulletType
 		damage: 8000
 		splashDamageRadius: 8
 		splashDamage: 4000
@@ -73,12 +76,14 @@ ammoTypes: {
     }
 	}
 	blast-compound: {
+		type: ArtilleryBulletType
 		damage: 8000
 		splashDamageRadius: 64
 		splashDamage: 8000
 		speed: 40.0
 		lifetime: 50
 		pierce: true
+		hitTiles: false
     bulletWidth: 3
     hitEffect: flakExplosion
     ammoMultiplier: 1
@@ -89,6 +94,7 @@ ammoTypes: {
     	type: BasicBulletType
     	damage: 2000
     	hitSound: bang
+    	hitTiles: true
     	splashDamageRadius: 16
     	splashDamage: 160
     	lifetime: 8
