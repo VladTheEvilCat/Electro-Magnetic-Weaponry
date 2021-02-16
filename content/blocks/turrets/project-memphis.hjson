@@ -97,18 +97,18 @@ ammoTypes: {
     	hitTiles: true
     	splashDamageRadius: 16
     	splashDamage: 160
+    	lifetime:5
     	fragBullets: 8
-    fragVelocityMin: 2
-    fragVelocityMax: 8
-    fragBullet: {
-    	type: BasicBulletType
-    	damage: 200
-    	hitSound: bang
-    	hitTiles: true
-    	splashDamageRadius: 16
-    	splashDamage: 160
-    }
-
+    	fragVelocityMin: 2
+    	fragVelocityMax: 8
+    	fragBullet: {
+    		type: BasicBulletType
+    		damage: 200
+    		hitSound: bang
+    		hitTiles: true
+    		splashDamageRadius: 16
+    		splashDamage: 160
+    	}
     }
 	}
 }
