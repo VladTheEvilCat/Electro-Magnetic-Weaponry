@@ -19,7 +19,7 @@ coolantUsage: 2.0
 shootShake: 5
 shootSound: massive-railgun
 shootEffect: railShoot
-smokeEffect: bigShockwave
+//smokeEffect: bigShockwave
 
 consumes: {
 	power: {
