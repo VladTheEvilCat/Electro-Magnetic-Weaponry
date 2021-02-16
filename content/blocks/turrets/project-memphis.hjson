@@ -87,7 +87,7 @@ ammoTypes: {
     bulletWidth: 3
     hitEffect: flakExplosion
     ammoMultiplier: 1
-    fragBullets: 32
+    fragBullets: 8
     fragVelocityMin: 2
     fragVelocityMax: 16
     fragBullet: {
@@ -99,7 +99,7 @@ ammoTypes: {
     	splashDamage: 160
     	lifetime:5
     	fragBullets: 8
-    	fragVelocityMin: 2
+    	fragVelocityMin: 4
     	fragVelocityMax: 8
     	fragBullet: {
     		type: BasicBulletType
