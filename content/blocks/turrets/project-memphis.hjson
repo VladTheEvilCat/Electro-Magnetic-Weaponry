@@ -2,14 +2,13 @@ type: ArtilleryTurret
 name: "[red]MHEMPWS"
 description: "[red](MHEMRWS) 'Massive Hyper-Electro-Magnetic Propultion Weapon System'"
 details: "[red]-CLASSIFIED-"
-targetAir: false
-targetGround: true
 size: 4
 health: 5000
 reloadTime: 1000
 shot: 1
 maxAmmo: 50
 range: 1128
+minRange: 32
 inaccuracy: 0.125
 
 rotateSpeed: 1.0
@@ -19,7 +18,7 @@ coolantUsage: 2.0
 shootShake: 5
 shootSound: massive-railgun
 shootEffect: railShoot
-//smokeEffect: bigShockwave
+smokeEffect: bigShockwave
 
 consumes: {
 	power: {
@@ -27,7 +26,7 @@ consumes: {
 		capacity: 10000
 	}
 }
-ammo: {
+ammoTypes: {
 	titanium: {
 		damage: 8000
 		splashDamageRadius: 16
@@ -36,21 +35,20 @@ ammo: {
 		lifetime: 50
 		pierce: true
 		recoilAmount: 15
-    	bulletWidth: 3
-    	bulletHeight: 10
-    	hitEffect: flakExplosion
-    	ammoMultiplier: 1
-    	fragBullets: 16
-    	fragVelocityMin: 2
-    	fragVelocityMax: 8
-    	fragBullet: {
-    		type: BasicBulletType
-    		damage: 2000
-    		hitSound: bang
-    		splashDamageRadius: 16
-    		splashDamage: 160
-    		lifetime: 4
-    	}
+    bulletWidth: 3
+    hitEffect: flakExplosion
+    ammoMultiplier: 1
+    fragBullets: 16
+    fragVelocityMin: 2
+    fragVelocityMax: 8
+    fragBullet: {
+    	type: BasicBulletType
+    	damage: 2000
+    	hitSound: bang
+    	splashDamageRadius: 16
+    	splashDamage: 160
+    	lifetime: 4
+   	}
 	}
 	graphite: {
 		damage: 8000
@@ -60,19 +58,19 @@ ammo: {
 		lifetime: 50
 		pierce: true
 		bulletWidth: 3
-    	hitEffect: flakExplosion
-    	ammoMultiplier: 2
-    	fragBullets: 8
-    	fragVelocityMin: 2
-    	fragVelocityMax: 8
-    	fragBullet: {
-    		type: BasicBulletType
-    		damage: 1000
-    		hitSound: bang
-    		splashDamageRadius: 16
-    		splashDamage: 160
-    		lifetime: 4
-    	}
+   	hitEffect: flakExplosion
+    ammoMultiplier: 2
+    fragBullets: 8
+    fragVelocityMin: 2
+    fragVelocityMax: 8
+    fragBullet: {
+    	type: BasicBulletType
+    	damage: 1000
+    	hitSound: bang
+    	splashDamageRadius: 16
+    	splashDamage: 160
+    	lifetime: 4
+    }
 	}
 	blast-compound: {
 		damage: 8000
@@ -81,21 +79,20 @@ ammo: {
 		speed: 40.0
 		lifetime: 50
 		pierce: true
-    	bulletWidth: 3
-    	bulletHeight: 10
-    	hitEffect: flakExplosion
-    	ammoMultiplier: 1
-    	fragBullets: 32
-    	fragVelocityMin: 2
-    	fragVelocityMax: 16
-    	fragBullet: {
-    		type: BasicBulletType
-    		damage: 2000
-    		hitSound: bang
-    		splashDamageRadius: 16
-    		splashDamage: 160
-    		lifetime: 8
-    	}
+    bulletWidth: 3
+    hitEffect: flakExplosion
+    ammoMultiplier: 1
+    fragBullets: 32
+    fragVelocityMin: 2
+    fragVelocityMax: 16
+    fragBullet: {
+    	type: BasicBulletType
+    	damage: 2000
+    	hitSound: bang
+    	splashDamageRadius: 16
+    	splashDamage: 160
+    	lifetime: 8
+    }
 	}
 }
 
@@ -110,5 +107,3 @@ requirements: [
 ]
 category: turret
 research: project-emerald
-
-
