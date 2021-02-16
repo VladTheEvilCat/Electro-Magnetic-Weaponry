@@ -27,7 +27,7 @@ consumes: {
 		capacity: 10000
 	}
 }
-ammoTypes: {
+ammo: {
 	titanium: {
 		damage: 8000
 		splashDamageRadius: 16
