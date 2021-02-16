@@ -28,12 +28,10 @@ smokeEffect: bigShockwave
 //powerUse: 10000
 
 consumes: {
-	ConsumePower:{
+	power: {
 		usage: 10000
 		capacity: 10000
-		buffered: true
 	}
-
 }
 ammoTypes: {
 	titanium: {
