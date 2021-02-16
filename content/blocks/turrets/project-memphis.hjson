@@ -1,8 +1,8 @@
 type: ArtilleryTurret
 name: "[red]MHEMPWS"
 description: "[red](MHEMRWS) 'Massive Hyper-Electro-Magnetic Propultion Weapon System'"
-details: "[red]-CLASSIFIED-"
-"[yellow]Uses >0 Power"
+details: "[red]-CLASSIFIED-
+[yellow]Uses >0 Power"
 targetAir: false
 targetGround: true
 size: 4
