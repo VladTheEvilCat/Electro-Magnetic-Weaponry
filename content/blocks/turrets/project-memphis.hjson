@@ -108,6 +108,7 @@ ammoTypes: {
     		hitTiles: true
     		splashDamageRadius: 16
     		splashDamage: 160
+    		lifetime:5
     	}
     }
 	}
