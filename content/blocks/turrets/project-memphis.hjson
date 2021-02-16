@@ -7,7 +7,7 @@ health: 5000
 reloadTime: 1000
 shot: 1
 maxAmmo: 50
-range: 1128
+range: 2048
 //minRange: 32
 inaccuracy: 0.125
 
@@ -18,7 +18,7 @@ coolantUsage: 2.0
 shootShake: 5
 shootSound: massive-railgun
 shootEffect: railShoot
-smokeEffect: bigShockwave
+smokeEffect: nuclearShockwave
 
 consumes: {
 	power: {
@@ -29,9 +29,9 @@ consumes: {
 ammoTypes: {
 	titanium: {
 		type: ArtilleryBulletType
-		damage: 8000
+		damage: 4000
 		splashDamageRadius: 16
-		splashDamage: 4000
+		splashDamage: 2000
 		speed: 40.0
 		lifetime: 50
 		pierce: true
@@ -45,7 +45,7 @@ ammoTypes: {
     fragBullet: {
     	type: BasicBulletType
     	hitTiles: false
-    	damage: 2000
+    	damage: 1000
     	hitSound: bang
     	splashDamageRadius: 16
     	splashDamage: 160
@@ -54,9 +54,9 @@ ammoTypes: {
 	}
 	graphite: {
 		type: ArtilleryBulletType
-		damage: 8000
+		damage: 4000
 		splashDamageRadius: 8
-		splashDamage: 4000
+		splashDamage: 2000
 		speed: 45.0
 		lifetime: 50
 		pierce: true
@@ -68,7 +68,7 @@ ammoTypes: {
     fragVelocityMax: 8
     fragBullet: {
     	type: BasicBulletType
-    	damage: 1000
+    	damage: 500
     	hitSound: bang
     	splashDamageRadius: 16
     	splashDamage: 160
@@ -79,7 +79,7 @@ ammoTypes: {
 		type: ArtilleryBulletType
 		damage: 8000
 		splashDamageRadius: 64
-		splashDamage: 8000
+		splashDamage: 6000
 		speed: 40.0
 		lifetime: 50
 		pierce: true
@@ -92,12 +92,23 @@ ammoTypes: {
     fragVelocityMax: 16
     fragBullet: {
     	type: BasicBulletType
-    	damage: 2000
+    	damage: 800
     	hitSound: bang
     	hitTiles: true
     	splashDamageRadius: 16
     	splashDamage: 160
-    	lifetime: 8
+    	fragBullets: 8
+    fragVelocityMin: 2
+    fragVelocityMax: 8
+    fragBullet: {
+    	type: BasicBulletType
+    	damage: 200
+    	hitSound: bang
+    	hitTiles: true
+    	splashDamageRadius: 16
+    	splashDamage: 160
+    }
+
     }
 	}
 }
