@@ -90,7 +90,7 @@ ammoTypes: {
    	hitTiles: false
     fragBullets: 8
     fragVelocityMin: 2
-    fragVelocityMax: 16
+    fragVelocityMax: 12
     fragBullet: {
     	type: BasicBulletType
     	damage: 800
@@ -100,7 +100,7 @@ ammoTypes: {
     	splashDamage: 160
     	lifetime:5
     	fragBullets: 8
-    	fragVelocityMin: 4
+    	fragVelocityMin: 2
     	fragVelocityMax: 8
     	fragBullet: {
     		type: BasicBulletType
@@ -109,7 +109,7 @@ ammoTypes: {
     		hitTiles: true
     		splashDamageRadius: 16
     		splashDamage: 160
-    		lifetime:5
+    		lifetime:4
     	}
     }
 	}
@@ -140,7 +140,7 @@ ammoTypes: {
     	lifetime:4
     	fragBullets: 8
     	fragVelocityMin: 4
-    	fragVelocityMax: 8
+    	fragVelocityMax: 16
     	fragBullet: {
     		type: BasicBulletType
     		damage: 200

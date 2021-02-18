@@ -63,7 +63,7 @@ ammoTypes: {
 	blast-compound: {
         name: "HEF"
         description: "High Explosive Fragmentation"
-		damage: 128
+		damage: 64
 		splashDamageRadius: 16
 		splashDamage: 96
 		speed: 27.5
@@ -81,12 +81,10 @@ ammoTypes: {
     	fragVelocityMax: 16
     	fragBullet: {
     		type: BasicBulletType
-    		damage: 32
-    		//hitSound: shoot
-    		splashDamageRadius: 4
+    		damage: 16
+    		splashDamageRadius: 8
     		splashDamage: 32
     		lifetime: 3
-    		//speed: 10
             fragBullets: 3
             fragBullet: {
                 type: BasicBulletType
@@ -141,26 +139,25 @@ ammoTypes: {
 		damage: 64
 		splashDamageRadius: 16
 		splashDamage: 16
-		speed: 25
+		speed: 30
 		lifetime: 60
 		recoilAmount: 8
     	bulletWidth: 4
     	hitEffect: flakExplosion
-    	hitSize: 16
+    	hitSize: 32
     	hitSound: bang
     	ammoMultiplier: 1
-    	drag: 0.035
+    	drag: 0.015
     	fragBullets: 16
-    	fragVelocityMin: 2
-    	fragVelocityMax: 8
+    	fragVelocityMin: 4
+    	fragVelocityMax: 16
     	fragBullet: {
     		type: BasicBulletType
     		bulletWidth: 2
-    		bulletHeight: 2
     		damage: 32
-    		//hitSound: shoot
-    		splashDamageRadius: 8
-    		splashDamage: 32
+    		hitSound: shootsnap
+    		splashDamageRadius: 32
+    		splashDamage: 64
     		lifetime: 6
     	}
 	}
