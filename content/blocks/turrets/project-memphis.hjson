@@ -12,7 +12,7 @@ minRange: 32
 inaccuracy: 1
 
 rotateSpeed: 0.5
-coolantMultiplier: 2.125
+coolantMultiplier: 2.0
 coolantUsage: 4.0
 
 shootShake: 5
@@ -53,7 +53,7 @@ ammoTypes: {
    	}
 	}
 	graphite: {
-		type: ArtilleryBulletType
+		type: BasicBulletType
 		damage: 4000
 		splashDamageRadius: 8
 		splashDamage: 2000
@@ -77,11 +77,11 @@ ammoTypes: {
 	}
 	blast-compound: {
 		type: ArtilleryBulletType
-		damage: 8000
+		damage: 2000
 		splashDamageRadius: 64
 		splashDamage: 6000
 		speed: 35.0
-		//lifetime: 50
+		lifetime: 50
 		pierce: true
 		hitTiles: false
     //bulletWidth: 3
@@ -109,6 +109,45 @@ ammoTypes: {
     		hitTiles: true
     		splashDamageRadius: 16
     		splashDamage: 160
+    		lifetime:5
+    	}
+    }
+	}
+
+	silicon: {
+		type: ArtilleryBulletType
+		damage: 256
+		splashDamageRadius: 64
+		splashDamage: 128
+		speed: 32.0
+		//lifetime: 50
+		pierce: true
+		hitTiles: false
+    //bulletWidth: 3
+    hitEffect: flakExplosion
+    ammoMultiplier: 1
+    fragBullets: 16
+    fragVelocityMin: 4
+    fragVelocityMax: 16
+    fragBullet: {
+    	type: BasicBulletType
+    	damage: 512
+    	pierce: true
+    	hitSound: bang
+    	hitTiles: false
+    	splashDamageRadius: 32
+    	splashDamage: 128
+    	lifetime:4
+    	fragBullets: 8
+    	fragVelocityMin: 4
+    	fragVelocityMax: 8
+    	fragBullet: {
+    		type: BasicBulletType
+    		damage: 200
+    		hitSound: shoot
+    		hitTiles: false
+    		splashDamageRadius: 16
+    		splashDamage: 256
     		lifetime:5
     	}
     }
