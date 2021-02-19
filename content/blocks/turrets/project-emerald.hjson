@@ -140,7 +140,7 @@ ammoTypes: {
 		damage: 64
 		splashDamageRadius: 16
 		splashDamage: 16
-		speed: 30
+		speed: 32
 		lifetime: 60
 		recoilAmount: 8
     	bulletWidth: 4
@@ -148,7 +148,7 @@ ammoTypes: {
     	hitSize: 32
     	hitSound: bang
     	ammoMultiplier: 1
-    	drag: 0.015
+    	//drag: 0.015
     	fragBullets: 16
     	fragVelocityMin: 4
     	fragVelocityMax: 16
