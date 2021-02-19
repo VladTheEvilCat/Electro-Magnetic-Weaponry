@@ -134,6 +134,7 @@ ammoTypes: {
         }
 	}
 	silicon: {
+		type: ArtilleryBulletType
         name: "HEF-VT"
         description: "High Explosive Fragmentation-Variable Time fuse (proximity fuse)"
 		damage: 64
@@ -155,7 +156,7 @@ ammoTypes: {
     		type: BasicBulletType
     		bulletWidth: 2
     		damage: 32
-    		hitSound: shootsnap
+    		//hitSound: shootsnap
     		splashDamageRadius: 32
     		splashDamage: 64
     		lifetime: 6

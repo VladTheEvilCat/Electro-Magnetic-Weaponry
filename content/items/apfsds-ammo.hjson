@@ -1,10 +1,9 @@
 type: material
-name: HEATFS
-description: High Velocity Ammo for the Rail Gun (High-Explosive, Anti-Tank, Fin-Stabalized)
-explosiveness: 0.1
-color: ff0a0a
-/*
-heatfs20mm : {
+name: "APFSDS Ammo"
+description: High Velocity Ammo for the Rail Gun (Armor-Pearcing, Discarding SABOT)
+color: 0f0f0f
+
+apfsds20mm : {
     speed: 10
     damage: 50
     bulletWidth: 5
@@ -13,4 +12,3 @@ heatfs20mm : {
     smokeEffect: shootLargeSmoke
     ammoMultiplier: 1
 }
-*/
