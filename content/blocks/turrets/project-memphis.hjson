@@ -160,7 +160,7 @@ ammoTypes: {
 		splashDamageRadius: 4
 		splashDamage: 2000
 		speed: 50.0
-		lifetime: 50
+		lifetime: 64
 		pierce: true
 		bulletWidth: 3
 		hitEffect: flakExplosion
@@ -183,7 +183,7 @@ ammoTypes: {
 		splashDamageRadius: 8
 		splashDamage: 4000
 		speed: 49.5
-		lifetime: 50
+		lifetime: 64
 		pierce: true
 		bulletWidth: 3
 		hitEffect: flakExplosion
