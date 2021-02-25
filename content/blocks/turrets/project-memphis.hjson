@@ -15,7 +15,7 @@ rotateSpeed: 0.5
 coolantMultiplier: 2.0
 coolantUsage: 4.0
 
-shootShake: 5
+shootShake: 10
 shootSound: massive-railgun
 shootEffect: railShoot
 smokeEffect: nuclearShockwave
@@ -36,21 +36,21 @@ ammoTypes: {
 		lifetime: 50
 		pierce: true
 		recoilAmount: 15
-    bulletWidth: 3
-    hitEffect: flakExplosion
-    ammoMultiplier: 1
-    fragBullets: 16
-    fragVelocityMin: 2
-    fragVelocityMax: 8
-    fragBullet: {
-    	type: BasicBulletType
-    	hitTiles: false
-    	damage: 1000
-    	hitSound: bang
-    	splashDamageRadius: 16
-    	splashDamage: 160
-    	lifetime: 4
-   	}
+		bulletWidth: 3
+		hitEffect: flakExplosion
+		ammoMultiplier: 1
+		fragBullets: 16
+		fragVelocityMin: 2
+		fragVelocityMax: 8
+		fragBullet: {
+			type: BasicBulletType
+			hitTiles: false
+			damage: 1000
+			hitSound: bang
+			splashDamageRadius: 16
+			splashDamage: 160
+			lifetime: 4
+		}
 	}
 	graphite: {
 		type: BasicBulletType
@@ -61,20 +61,21 @@ ammoTypes: {
 		lifetime: 50
 		pierce: true
 		bulletWidth: 3
-   	hitEffect: flakExplosion
-    ammoMultiplier: 2
-    fragBullets: 8
-    fragVelocityMin: 2
-    fragVelocityMax: 4
-    fragBullet: {
-    	type: BasicBulletType
-    	damage: 500
-    	hitSound: bang
-    	splashDamageRadius: 16
-    	splashDamage: 160
-    	lifetime: 4
-    }
+		hitEffect: flakExplosion
+		ammoMultiplier: 2
+		fragBullets: 8
+		fragVelocityMin: 2
+		fragVelocityMax: 4
+		fragBullet: {
+			type: BasicBulletType
+			damage: 500
+		   hitSound: bang
+		   splashDamageRadius: 16
+		   splashDamage: 160
+		   lifetime: 4
+		}
 	}
+
 	blast-compound: {
 		type: ArtilleryBulletType
 		damage: 2000
@@ -84,34 +85,34 @@ ammoTypes: {
 		lifetime: 50
 		pierce: true
 		hitTiles: false
-    //bulletWidth: 3
-    hitEffect: flakExplosion
-    ammoMultiplier: 1
-   	hitTiles: false
-    fragBullets: 8
-    fragVelocityMin: 2
-    fragVelocityMax: 12
-    fragBullet: {
-    	type: BasicBulletType
-    	damage: 800
-    	pierce: true
-    	hitSound: bang
-    	splashDamageRadius: 16
-    	splashDamage: 160
-    	lifetime:5
-    	fragBullets: 8
-    	fragVelocityMin: 2
-    	fragVelocityMax: 8
-    	fragBullet: {
-    		type: BasicBulletType
-    		damage: 200
-    		hitSound: bang
-    		hitTiles: true
-    		splashDamageRadius: 16
-    		splashDamage: 160
-    		lifetime:4
-    	}
-    }
+		//bulletWidth: 3
+		hitEffect: flakExplosion
+		ammoMultiplier: 1
+		hitTiles: false
+		fragBullets: 8
+		fragVelocityMin: 2
+		fragVelocityMax: 12
+		fragBullet: {
+			type: BasicBulletType
+			damage: 800
+			pierce: true
+			hitSound: bang
+			splashDamageRadius: 16
+			splashDamage: 160
+			lifetime:5
+			fragBullets: 8
+			fragVelocityMin: 2
+			fragVelocityMax: 8
+			fragBullet: {
+				type: BasicBulletType
+				damage: 200
+				hitSound: bang
+				hitTiles: true
+				splashDamageRadius: 16
+				splashDamage: 160
+				lifetime:4
+			}
+		}
 	}
 
 	silicon: {
@@ -123,34 +124,80 @@ ammoTypes: {
 		//lifetime: 50
 		pierce: true
 		hitTiles: false
-    //bulletWidth: 3
-    hitEffect: flakExplosion
-    ammoMultiplier: 1
-    fragBullets: 16
-    fragVelocityMin: 4
-    fragVelocityMax: 16
-    fragBullet: {
-    	type: BasicBulletType
-    	damage: 512
-    	pierce: true
-    	hitSound: bang
-    	hitTiles: false
-    	splashDamageRadius: 32
-    	splashDamage: 128
-    	lifetime:4
-    	fragBullets: 8
-    	fragVelocityMin: 4
-    	fragVelocityMax: 16
-    	fragBullet: {
-    		type: BasicBulletType
-    		damage: 200
-    		hitSound: shoot
-    		hitTiles: false
-    		splashDamageRadius: 16
-    		splashDamage: 256
-    		lifetime:5
-    	}
-    }
+		//bulletWidth: 3
+		hitEffect: flakExplosion
+		ammoMultiplier: 1
+		fragBullets: 16
+		fragVelocityMin: 4
+		fragVelocityMax: 16
+		fragBullet: {
+			type: BasicBulletType
+			damage: 512
+			pierce: true
+			hitSound: bang
+			hitTiles: false
+			splashDamageRadius: 32
+			splashDamage: 128
+			lifetime:4
+			fragBullets: 8
+			fragVelocityMin: 4
+			fragVelocityMax: 16
+			fragBullet: {
+				type: BasicBulletType
+				damage: 200
+				hitSound: bang
+				hitTiles: false
+				splashDamageRadius: 16
+				splashDamage: 256
+				lifetime:5
+			}
+		}
+	}
+
+	apfsds-ammo: {
+		type: BasicBulletType
+		damage: 6400
+		splashDamageRadius: 4
+		splashDamage: 2000
+		speed: 50.0
+		lifetime: 50
+		pierce: true
+		bulletWidth: 3
+		hitEffect: flakExplosion
+		ammoMultiplier: 1
+		fragBullets: 4
+		fragVelocityMin: 2
+		fragVelocityMax: 3
+		fragBullet: {
+			type: BasicBulletType
+			damage: 500
+			hitSound: bang
+			pierce: true
+			lifetime: 5
+		}
+	}
+
+	heatfs-ammo: {
+		type: BasicBulletType
+		damage: 8000
+		splashDamageRadius: 8
+		splashDamage: 4000
+		speed: 49.5
+		lifetime: 50
+		pierce: true
+		bulletWidth: 3
+		hitEffect: flakExplosion
+		ammoMultiplier: 1
+		fragBullets: 8
+		fragVelocityMin: 2
+		fragVelocityMax: 4
+		fragBullet: {
+			type: BasicBulletType
+			damage: 1000
+			hitSound: bang
+			pierce: true
+			lifetime: 5
+		}
 	}
 }
 
