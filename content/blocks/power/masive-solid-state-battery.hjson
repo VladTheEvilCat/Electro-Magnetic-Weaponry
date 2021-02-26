@@ -1,0 +1,18 @@
+type: Battery
+name: "Masive Solid State Battery"
+description: "Battery equivalent of an SSD (Solid-State Drive)"
+details: "Cheaper than 4 4x4 SSB's & holds 4x as much!"
+
+consumes: {
+	powerBuffered: 6400000
+}
+health: 2000
+size: 8
+requirements: [
+  copper/16
+  titanium/128
+  surge-alloy/4096
+  silicon/16
+]
+category: power
+research: giant-solid-state-battery
