@@ -9,7 +9,7 @@ shot: 1
 maxAmmo: 50
 range: 3072
 minRange: 32
-inaccuracy: 0.5
+inaccuracy: 0.25
 
 rotateSpeed: 0.5
 coolantMultiplier: 1.75
