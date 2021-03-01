@@ -9,13 +9,13 @@ shot: 1
 maxAmmo: 50
 range: 3072
 minRange: 32
-inaccuracy: 1
+inaccuracy: 0
 
 rotateSpeed: 0.5
-coolantMultiplier: 2.0
+coolantMultiplier: 1.75
 coolantUsage: 4.0
 
-shootShake: 10
+shootShake: 8
 shootSound: massive-railgun
 shootEffect: railShoot
 smokeEffect: nuclearShockwave
@@ -182,7 +182,7 @@ ammoTypes: {
 		damage: 8000
 		splashDamageRadius: 8
 		splashDamage: 4000
-		speed: 49.5
+		speed: 49.75
 		lifetime: 64
 		pierce: true
 		bulletWidth: 3
