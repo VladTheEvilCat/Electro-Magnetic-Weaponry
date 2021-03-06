@@ -89,6 +89,7 @@ ammoTypes: {
 		hitEffect: flakExplosion
 		ammoMultiplier: 1
 		hitTiles: false
+		hitSound: thunder-explosion
 		fragBullets: 8
 		fragVelocityMin: 2
 		fragVelocityMax: 12
@@ -96,7 +97,7 @@ ammoTypes: {
 			type: BasicBulletType
 			damage: 800
 			pierce: true
-			hitSound: bang
+			//hitSound: bang
 			splashDamageRadius: 16
 			splashDamage: 160
 			lifetime:5
@@ -106,7 +107,7 @@ ammoTypes: {
 			fragBullet: {
 				type: BasicBulletType
 				damage: 200
-				hitSound: bang
+				//hitSound: bang
 				hitTiles: true
 				splashDamageRadius: 16
 				splashDamage: 160
@@ -149,7 +150,7 @@ ammoTypes: {
 				hitTiles: false
 				splashDamageRadius: 16
 				splashDamage: 256
-				lifetime:5
+				//lifetime:5
 			}
 		}
 	}
