@@ -18,7 +18,7 @@ coolantUsage: 4.0
 shootShake: 8
 shootSound: massive-railgun
 shootEffect: railShoot
-smokeEffect: nuclearShockwave
+//smokeEffect: nuclearShockwave
 
 consumes: {
 	power: {
