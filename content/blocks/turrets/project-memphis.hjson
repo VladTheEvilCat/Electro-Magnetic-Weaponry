@@ -4,7 +4,7 @@ description: "[red](MHEMRWS) 'Massive Hyper-Electro-Magnetic Propultion Weapon S
 details: "[red]-CLASSIFIED-"
 size: 4
 health: 5000
-reloadTime: 1000
+reload: 1000
 shot: 1
 maxAmmo: 50
 range: 3072
