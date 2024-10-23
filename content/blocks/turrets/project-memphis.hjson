@@ -1,7 +1,7 @@
 type: ItemTurret
 name: "[red]MHEMPWS"
-description: "[red](MHEMRWS) 'Massive Hyper-Electro-Magnetic Propultion Weapon System'"
-details: "[red]-CLASSIFIED-"
+description: "[red](MHEMRWS) 'Massive Hyper-Electro-Magneticly Propelled Weapon System'"
+details: "Project 'Memphis': [red]-CLASSIFIED-"
 size: 4
 health: 5000
 reload: 1000
@@ -130,7 +130,7 @@ ammoTypes: {
 		ammoMultiplier: 1
 		fragBullets: 16
 		fragVelocityMin: 4
-		fragVelocityMax: 16
+		fragVelocityMax: 6
 		fragBullet: {
 			type: BasicBulletType
 			damage: 512
@@ -142,12 +142,12 @@ ammoTypes: {
 			lifetime:4
 			fragBullets: 8
 			fragVelocityMin: 4
-			fragVelocityMax: 16
+			fragVelocityMax: 8
 			fragBullet: {
 				type: BasicBulletType
 				damage: 200
 				hitSound: bang
-				hitTiles: false
+				hitTiles: true
 				splashDamageRadius: 16
 				splashDamage: 256
 				//lifetime:5
