@@ -19,8 +19,8 @@ coolantUsage: 0.9
 
 consumes: {
 	power: {
-		usage: 17.06666666
-		capacity: 341.3333333
+		usage: 45
+		capacity: 180
 		//buffered: true
 	}
 
