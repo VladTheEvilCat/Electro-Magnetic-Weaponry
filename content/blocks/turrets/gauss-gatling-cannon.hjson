@@ -19,9 +19,9 @@ coolantUsage: 0.6
 
 consumes: {
 	power: {
-	 amount: 1024
-  capacity: 2048
- }
+		amount: 1024
+		capacity: 2048
+	}
 }
 
 shootType: {
