@@ -1,4 +1,4 @@
-type: PowerTurret
+type: ItemTurret
 name: "Gauss Gatling Cannon"
 description: "Very powerful, uses coils of wire."
 details: "Oh yah, it's an AA gun as well."
@@ -26,6 +26,75 @@ shootType: {
 	pierce: false
 	recoilAmount: 3
 	//hitEffect: flakExplosion
+}
+
+consumes: {
+	power: {
+		usage: 40
+		capacity: 160
+		//buffered: true
+	}
+
+}
+ammoTypes: {
+	titanium: {
+		name: "AP"
+		description: "Generic Armor Piercing"
+		damage: 100
+		splashDamageRadius: 2
+		splashDamage: 45
+		speed: 20
+		lifetime: 50
+		pierce: true
+		recoilAmount: 3
+		//hitEffect: flakExplosion
+		//hitSound
+		ammoMultiplier: 1
+		reloadMultiplier: 0.8
+		drag: 0.015
+	}
+	graphite: {
+		name: "HVAP"
+		description: "High Velocity Armor Piercing"
+		damage: 64
+		splashDamageRadius: 1
+		splashDamage: 16
+		speed: 32.0
+		lifetime: 35
+  pierce: true
+		recoilAmount: 2
+  bulletWidth: 3
+  //hitEffect: flakExplosion
+  //hitSound: bang
+  ammoMultiplier: 10
+  reloadMultiplier: 1.25
+  drag: 0.005
+	}
+	blast-compound: {
+		name: "HEF"
+ 	description: "High Explosive Fragmentation"
+		damage: 64
+		splashDamageRadius: 16
+		splashDamage: 96
+		speed: 27.5
+		lifetime: 50
+		//pierce: true
+		recoilAmount: 8
+  //hitEffect: flakExplosion
+		hitSound: bang
+		drag: 0.015
+		ammoMultiplier: 1
+  fragBullets: 5
+  fragVelocityMin: 2
+  fragVelocityMax: 3
+  fragBullet: {
+  	type: BasicBulletType
+   damage: 16
+   splashDamageRadius: 4
+   splashDamage: 16
+   lifetime: 2
+		}
+	}
 }
 	
 requirements: [
