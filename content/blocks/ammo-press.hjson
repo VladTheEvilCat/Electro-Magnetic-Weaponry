@@ -1,0 +1,52 @@
+type: multicraft.MultiCrafter
+name: "Ammo Press"
+description: "A machine that produces high-end munitions."
+details: "More coming in the future maybe..."
+size: 2,
+health: 100,
+category: "crafting",
+requirements: [
+	copper/100,
+	titanium/100,
+	graphite/1000,
+	silicon/4000,
+	lead/500,
+	plastanium/5000
+],
+research: {
+	parent: "plastanium-compressor"
+	requirements: [
+		silicon/10000,
+		graphite/5000,
+		plastanium/1000
+	]
+},
+recipes: [
+	{
+		input: {
+			items: [
+				graphite/100,
+				titanium/500,
+				plastanium/50]},
+		output: {
+			items: [
+				emw-apfsds-ammo/1
+			]
+		},
+		craftTime: 250.0
+	},
+	{
+		input: {
+			items: [
+				graphite/100,
+				titanium/500,
+				blast-compound/50,
+				plastanium/50]},
+		output: {
+			items: [
+				emw-heatfs-ammo/1
+			]
+		},
+		craftTime: 600.0
+	}
+]

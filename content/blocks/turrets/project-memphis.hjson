@@ -159,7 +159,7 @@ ammoTypes: {
 		type: BasicBulletType
 		damage: 6400
 		splashDamageRadius: 4
-		splashDamage: 2000
+		splashDamage: 500
 		speed: 50.0
 		lifetime: 64
 		pierce: true

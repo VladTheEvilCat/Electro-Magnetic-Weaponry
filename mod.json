@@ -1,8 +1,8 @@
-name: "EMW"
+name: "emw"
 displayName: "Electro-Magnetic Weaponry"
 author: "[cyan]Vlad The [red]Evil [cyan]Cat"
 description: "Powerful weapons that use electromagnetism to make big pew."
 version: "1.8.11"
 minGameVersion: "136"
-dependencies: []
+dependencies: ["multi-crafter"]
 hidden: false
